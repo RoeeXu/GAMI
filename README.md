@@ -38,7 +38,7 @@ Both programs print the final objective as `The best solution is <value>`.
 ## Benchmark instances (`data/`)
 
 - **Set M** (43 instances, `data/set_m/`): Wang, Golden & Wasil (2015), n = 10–500 cities, 1–20 depots. Main benchmark of the paper.
-- **Set P** (15 instances, `data/set_p/`): converted from the classic Cordeau et al. (1997) MDVRP benchmark (p01–p23). Conversion: customer and depot coordinates and the per-depot vehicle number `m` are taken verbatim from the original files; the capacity (Q) and route-duration (D) constraints are removed to obtain Min-Max MDMTSP instances. Since p12–p14, p15–p17, p18–p20 and p21–p23 differ **only** in the removed D/Q constraints, each group collapses to a single instance after conversion; the de-duplicated set therefore contains 15 distinct instances (p01–p12, p15, p18, p21), n = 50–360, 2–9 depots, 8–45 salesmen. Supplementary benchmark.
+- **Set P** (15 instances, `data/set_p/`): converted from the classic Cordeau et al. (1997) MDVRP benchmark (p01–p23). Conversion: customer and depot coordinates are taken verbatim from the original files; the capacity (Q) and route-duration (D) constraints are removed, and **each depot hosts exactly one salesman** (following the min-max MDVRP convention of Carlsson et al., 2009). Since p12–p14, p15–p17, p18–p20 and p21–p23 differ **only** in the removed D/Q constraints, each group collapses to a single instance after conversion; the de-duplicated set therefore contains 15 distinct instances (p01–p12, p15, p18, p21), n = 50–360, m = 2–9 salesmen (= number of depots). Supplementary benchmark.
 
 Format: header line `name n n_depots reserved`, then one line per depot (`id x y m_k`), then one line per city (`id x y flag`).
 
