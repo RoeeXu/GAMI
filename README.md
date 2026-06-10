@@ -1,6 +1,6 @@
 # GAMI: Geometry-Aware MILP Initialization for the Min-Max MDMTSP
 
-Companion repository for the paper *"基于几何感知MILP初始化的最小-最大多仓库多旅行商问题求解算法"* (submitted to 《计算机应用研究》 / Application Research of Computers).
+Companion repository for the paper *"Geometry-Aware MILP Initialization for the Min-Max Multi-Depot Multiple Traveling Salesman Problem"* (under review).
 
 GAMI builds high-quality initial solutions for the min-max multi-depot multiple traveling salesman problem (Min-Max MDMTSP) by combining Delaunay triangulation, size-capped Kruskal clustering, and MILP-based load-balanced assignment. The initialization is integrated, in a plug-and-play manner, into the mEAX memetic search framework of He & Hao (EJOR, 2023).
 
