@@ -31,7 +31,7 @@ results/    all experiment result data (CSV)
 # example: ./gami_v14_hybrid data/set_m/MS1d.txt 60 1 0
 ```
 `flag` is reserved, use `0`. `time_limit_s = 0` outputs the initial solution.
-The MILP assignment uses CPLEX (statically linked into the binary; no CPLEX installation required at runtime). Per-run CPLEX settings: single thread, 10 s time limit, 1% optimality gap.
+The MILP assignment uses CPLEX (statically linked into the binary; no CPLEX installation required at runtime). Per-run CPLEX settings: single thread, 2 s time limit, 10% optimality gap.
 
 Both programs print the final objective as `The best solution is <value>`.
 
